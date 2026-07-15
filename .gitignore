@@ -5,3 +5,4 @@ downloaded/
 processed/
 com.user.musicdaemon.plist
 config.json
+.DS_Store
