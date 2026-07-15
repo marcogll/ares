@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.queue/
+downloaded/
+processed/
+com.user.musicdaemon.plist
+config.json
