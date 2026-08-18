@@ -1,27 +1,40 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/marcogll/mg_data_storage/refs/heads/main/soul23/logo/soul23_logo.svg" width="110" alt="ares">
+  <a href="https://soul23.mx">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://raw.githubusercontent.com/marcogll/mg_data_storage/refs/heads/main/soul23/logo/soul23_logo_wh.png">
+      <source
+        media="(prefers-color-scheme: light)"
+        srcset="https://raw.githubusercontent.com/marcogll/mg_data_storage/refs/heads/main/soul23/logo/soul23_logo_blk.png">
+      <img
+        src="https://raw.githubusercontent.com/marcogll/mg_data_storage/refs/heads/main/soul23/logo/soul23_logo_blk.png"
+        width="110"
+        alt="Soul:23">
+    </picture>
+  </a>
 </p>
 
 <h1 align="center">ares</h1>
 
 <p align="center">
-  Music downloader and media library manager with concurrent queue processing and automatic metadata tagging
+  Music downloader and media library manager with concurrent queue processing and automatic metadata tagging.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3a3a3a?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Flask-3a3a3a?style=flat-square&logo=flask&logoColor=white">
-  <img src="https://img.shields.io/badge/yt--dlp-3a3a3a?style=flat-square&logo=youtube&logoColor=white">
-  <img src="https://img.shields.io/badge/aria2-3a3a3a?style=flat-square&logo=aria&logoColor=white">
-  <img src="https://img.shields.io/badge/Tailwind-3a3a3a?style=flat-square&logo=tailwindcss&logoColor=white">
-  <img src="https://img.shields.io/badge/Mutagen-3a3a3a?style=flat-square&logo=musicbrainz&logoColor=white">
+  <img src="https://img.shields.io/badge/yt-dlp-3a3a3a?style=flat-square&logo=youtube&logoColor=white">
+  <img src="https://img.shields.io/badge/FFmpeg-3a3a3a?style=flat-square&logo=ffmpeg&logoColor=white">
 </p>
 
 ---
 
-<p align="center">
-  <b>ares</b> downloads audio from YouTube and YouTube Music URLs, applies ID3 metadata via YouTube title parsing or iTunes/Deezer fallback, and organizes files into an <code>Artist — Album</code> directory structure. A web UI provides real-time progress, concurrent download control, and a media library browser.
-</p>
+## Description
+
+ares downloads audio from YouTube and YouTube Music URLs, applies ID3 metadata via YouTube title parsing or iTunes/Deezer fallback, and organizes files into an `Artist — Album` directory structure. A web UI provides real-time progress, concurrent download control, and a media library browser.
+
+Built with Flask, yt-dlp and aria2 with a configurable worker pool (default 2 concurrent downloads), duplicate detection by video ID, and ID3 tagging via mutagen with cover art.
 
 ## Features
 
